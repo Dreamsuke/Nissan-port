@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.portfolio-card {
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-description {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+h3 {
+    margin: 0;
+    color: #333;
+}
+
+p {
+    margin: 10px 0 0;
+    color: #666;
+}
+
+.details-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://cdn.suwalls.com/wallpapers/meme/handsome-squidward-42402-3840x2160.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: -1; /* Push it below the content */
+    opacity: 0.6; /* Adjust this value to change the transparency level */
+}
+.center-content {
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 60, 255);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    height: 100vh; /* This makes the link take up the full viewport height */
+}
+
+/* ... rest of the styles.css content ... */
+
+.center-content {
+    position: relative; /* This is necessary for absolute positioning of child elements */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#dodgeButton {
+    padding: 40px 60px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #aaf71d;
+    color: rgb(187, 47, 243);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button#dodgeButton:hover {
+    background-color: #ffa600;
+}
+
+/* ... rest of the styles.css content ... */
+
+/* ... other styles ... */
+
+/* ... other styles in styles.css ... */
+
+#unlockImage {
+    position: absolute;
+    top: 100px;
+    width: 200px; 
+    height: 200px;
+    left: 300px;
+    cursor: pointer;
+    transition: transform 2s ease-in-out; /* Transition for smooth movement */
+}
+
+
+
+/* ... other styles in styles.css ... */
+
+#bigText {
+    font-size: 4rem; /* Adjust size as necessary */
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0; /* Start with invisible text */
+    transition: opacity 0.5s ease; /* Smooth transition for showing text */
+}
+
+.hidden {
+    display: none; /* Will be used to initially hide the text */
+}
